@@ -6,5 +6,5 @@ list accounts or exit the system).
 
 This project was originally created as part of my Python course with Geek University.
 
-I am currently making improvements through the use of try/except and while loops as part of
+I am currently making improvements through the use of try/except, while loops, adding comments, etc as part of
 my RAD university discipline.
