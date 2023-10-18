@@ -17,7 +17,7 @@ class Conta:
         return f'Número da conta: {self.numero} \nCliente: {self.cliente.nome} ' \
                f'\nSaldo Total: {formata_float_str_moeda(self.saldo_total)}'
 
-
+    # @property é um chamado decorator que define Getter Methods
     @property
     def numero(self: object) -> int:
         return self.__numero
