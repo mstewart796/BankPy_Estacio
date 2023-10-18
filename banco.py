@@ -49,6 +49,7 @@ def menu() -> None:
         except ValueError:
             print('Por favor, insira um número válida para a opção.')
 
+# Método para criar uma nova conta e cliente.
 def criar_conta() -> None:
     print('Informe os dados do cliente: ')
 
@@ -69,7 +70,7 @@ def criar_conta() -> None:
     sleep(2)
     menu()
 
-
+# Método para efetuar um saque na conta.
 def efetuar_saque() -> None:
     if len(contas) > 0:
         numero: int = int(input('Informe o número da sua conta: '))
@@ -87,7 +88,8 @@ def efetuar_saque() -> None:
     sleep(2)
     menu()
 
-
+# As funções 'efetuar_deposito' e 'efetuar_transferencia' têm estrutura semelhante à 'efetuar_saque' e são usadas
+# para realizar depósitos e transferências de dinheiro.
 def efetuar_deposito() -> None:
     if len(contas) > 0:
         numero: int = int(input('Informe o número da sua conta: '))
@@ -131,7 +133,7 @@ def efetuar_transferencia() -> None:
     sleep(2)
     menu()
 
-
+# Método para listar as contas e seus detalhes.
 def listar_contas() -> None:
     if len(contas) > 0:
         print('Listagem de contas')
@@ -145,7 +147,7 @@ def listar_contas() -> None:
     sleep(2)
     menu()
 
-
+# Método para buscar uma conta pelo número da conta.
 def buscar_conta_por_numero(numero: int) -> Conta:
     c: Conta = None
 
@@ -163,10 +165,7 @@ def print_title(title: str) -> None:
     print(f'== {title} ==')
     print('=' * line_length)
 
-
-
-
-
+# Função para imprimir um título com linhas de separação.
 if __name__ == '__main__':
     main()
 
