@@ -1,3 +1,5 @@
+import re  # Importe o módulo de expressões regulares
+
 from typing import List
 from time import sleep
 
@@ -55,7 +57,15 @@ def criar_conta() -> None:
 
     nome: str = input('Nome: ')
     email: str = input('Email: ')
-    cpf: str = input('CPF: ')
+
+    # Validação do CPF com expressão regular
+    while True:
+        cpf: str = input('CPF (digite no formato xxx.xxx.xxx-xx): ')
+        if re.match(r'\d{3}\.\d{3}\.\d{3}-\d{2}', cpf):
+            break
+        else:
+            print('CPF inválido. Digite no formato correto.')
+
     data_nascimento: str = input('Data de nascimento: ')
 
     cliente: Cliente = Cliente(nome, email, cpf, data_nascimento)
