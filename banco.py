@@ -56,7 +56,14 @@ def criar_conta() -> None:
     print('Informe os dados do cliente: ')
 
     nome: str = input('Nome: ')
-    email: str = input('Email: ')
+
+    # Validation of email with regular expression
+    while True:
+        email: str = input('Email: ')
+        if re.match(r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$', email):
+            break
+        else:
+            print('Email inválido. Digite no formato correto.')
 
     # Validação do CPF com expressão regular
     while True:
@@ -66,7 +73,13 @@ def criar_conta() -> None:
         else:
             print('CPF inválido. Digite no formato correto.')
 
-    data_nascimento: str = input('Data de nascimento: ')
+    # Validação de data de nasicmento com expressão regular
+    while True:
+        data_nascimento: str = input('Data de nascimento (dd/mm/aaaa): ')
+        if re.match(r'\d{2}/\d{2}/\d{4}', data_nascimento):
+            break
+        else:
+            print('Data de nascimento inválida. Digite no formato correto (dd/mm/aaaa).')
 
     cliente: Cliente = Cliente(nome, email, cpf, data_nascimento)
 
