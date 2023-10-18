@@ -186,14 +186,14 @@ def buscar_conta_por_numero(numero: int) -> Conta:
     return c
 
 
-# Essa função criar cria um t[itulo de 3 linhas, cada linha tem o mesmo número de caracteres
+# Essa função criar cria um título de 3 linhas, cada linha tem o mesmo número de caracteres
 def print_title(title: str) -> None:
     line_length = len(title) + 6  # Adjust for padding spaces
     print('=' * line_length)
     print(f'== {title} ==')
     print('=' * line_length)
 
-# Função para imprimir um título com linhas de separação.
+# Isto é uma função usado muito para verificar este módulo é o programa principal, ou em inglês o "main"
 if __name__ == '__main__':
     main()
 
