@@ -1,4 +1,4 @@
-import re  # Importe o módulo de expressões regulares
+import re  # re = expressões regulares
 
 from typing import List
 from time import sleep
