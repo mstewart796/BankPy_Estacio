@@ -47,7 +47,7 @@ def menu() -> None:
                 sleep(2)
                 menu()
         except ValueError:
-            print('Por favor, insira um número válida para a opção.')
+            print('Por favor, digite um número válido (1 - 6).')
 
 # Método para criar uma nova conta e cliente.
 def criar_conta() -> None:
@@ -64,8 +64,7 @@ def criar_conta() -> None:
 
     contas.append(conta)
 
-    print('Criada com sucesso')
-    print('Dados: ')
+    print('Conta criada com sucesso')
     print('----------')
     sleep(2)
     menu()
