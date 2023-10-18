@@ -6,9 +6,7 @@ from time import sleep
 from models.cliente import Cliente
 from models.conta import Conta
 
-
 contas: List[Conta] = []
-
 
 def main() -> None:
     menu()
