@@ -55,7 +55,13 @@ def menu() -> None:
 def criar_conta() -> None:
     print('Informe os dados do cliente: ')
 
-    nome: str = input('Nome: ')
+    # Validation of Nome (Name) - Ensure it's not empty and contains only letters and spaces
+    while True:
+        nome: str = input('Nome: ')
+        if nome.strip() and re.match(r'^[a-zA-Z\s]+$', nome):
+            break
+        else:
+            print('Nome inválido. Use apenas letras e espaços e não deixe em branco.')
 
     # Validation of email with regular expression
     while True:
