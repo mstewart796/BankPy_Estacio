@@ -95,7 +95,7 @@ class Conta:
                 self.saldo_total = self._calcula_saldo_total
                 destino.saldo = destino.saldo + valor
                 destino.saldo_total = destino._calcula_saldo_total
-            print('Saque efetuado')
+            print('Transferência efetuada')
         else:
             print('Não realizado')
 
