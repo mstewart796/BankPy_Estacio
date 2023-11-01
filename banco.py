@@ -1,3 +1,4 @@
+# Desenvolvido por Martin John Stewart 01.11.23
 import re  # re = expressões regulares
 
 from typing import List

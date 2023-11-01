@@ -1,3 +1,4 @@
+# Desenvolvido por Martin John Stewart 01.11.23
 from datetime import date
 from utils.helper import date_para_str, str_para_date
 import csv

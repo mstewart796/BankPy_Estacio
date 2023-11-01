@@ -1,3 +1,4 @@
+# Desenvolvido por Martin John Stewart 01.11.23
 from models.cliente import Cliente
 from models.conta import Conta
 
