@@ -13,7 +13,7 @@ class Cliente:
         self.__data_nascimento: date = str_para_date(data_nascimento)
         self.__data_cadastro: date = date.today()
         Cliente.contador += 1
-        # Salvar os detalhes do cliente em um arquivo CSV quando um novo objeto é criado
+        # Salvar os detalhes do cliente num arquivo CSV quando um novo objeto é criado
         self.save_to_csv()
 
     # @property é um chamado decorator que define Getter Methods

@@ -135,7 +135,7 @@ def efetuar_deposito() -> None:
 
 
 def efetuar_transferencia() -> None:
-    if len(contas) > 0:
+    if len(contas) > 1:
         numero_o: int = int(input('Informe o número da sua conta: '))
 
         conta_o: Conta = buscar_conta_por_numero(numero_o)
@@ -155,7 +155,7 @@ def efetuar_transferencia() -> None:
         else:
             print(f'Não foi econtrada a sua conta com número {numero_o}')
     else:
-        print('Ainda não existem contas cadastradas')
+        print('Pelo menos duas contas cadrastadas são necessarios para efetuar uma transferência')
     sleep(2)
     menu()
 
