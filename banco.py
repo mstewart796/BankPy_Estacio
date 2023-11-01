@@ -155,7 +155,7 @@ def efetuar_transferencia() -> None:
         else:
             print(f'Não foi econtrada a sua conta com número {numero_o}')
     else:
-        print('Pelo menos duas contas cadrastadas são necessarios para efetuar uma transferência')
+        print('É necessário pelo menos duas contas cadrastadas para efetuar uma transferência')
     sleep(2)
     menu()
 
