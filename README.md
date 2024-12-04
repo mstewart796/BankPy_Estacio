@@ -1,6 +1,6 @@
-# BankPy
+# MyBankSim
 
-BankPy is a simple Python application that emulates a banking system. Users can create accounts, manage their money through deposits, withdrawals, and transfers, and view a list of all registered accounts. The application features a user-friendly command-line interface for seamless interaction.
+MyBankSim is a simple Python application that emulates a banking system. Users can create accounts, manage their money through deposits, withdrawals, and transfers, and view a list of all registered accounts. The application features a user-friendly command-line interface for seamless interaction.
 
 ## Features
 
