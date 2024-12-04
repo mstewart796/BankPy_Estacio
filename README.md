@@ -19,17 +19,6 @@ BankPy is a simple Python application that emulates a banking system. Users can 
 - Python 3.7 or higher
 - Basic knowledge of Python and command-line tools
 
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-repo/bankpy.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd bankpy
-   ```
-
 ### Running the Application
 
 Run the `banco.py` file:
